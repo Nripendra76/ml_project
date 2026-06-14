@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Predict student exam performance using machine learning. Enter student data and get instant math score predictions.">
+    <title>Student Performance Predictor — AI-Powered Score Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-orb bg-orb--1"></div>
+        <div class="bg-orb bg-orb--2"></div>
+        <div class="bg-orb bg-orb--3"></div>
+    </div>
+    <div class="bg-grid"></div>
+
+    <div class="main-container">
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="/" class="navbar__logo">
+                <div class="navbar__icon">📊</div>
+                <span class="navbar__title">ScorePredict</span>
+            </a>
+            <div class="navbar__links">
+                <a href="/" class="navbar__link navbar__link--active">Home</a>
+                <a href="/predictdata" class="navbar__link">Predict</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Machine Learning Powered
+                </div>
+                <h1 class="hero__title">
+                    Predict Student<br>
+                    <span class="hero__title-gradient">Exam Performance</span>
+                </h1>
+                <p class="hero__description">
+                    Leverage the power of machine learning to predict math scores based on 
+                    student demographics, background, and academic preparation. Get instant, 
+                    data-driven insights.
+                </p>
+                <div class="hero__actions">
+                    <a href="/predictdata" class="btn btn--primary btn--lg">
+                        🎯 Start Predicting
+                    </a>
+                    <a href="#features" class="btn btn--secondary btn--lg">
+                        Learn More ↓
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon feature-card__icon--purple">🧠</div>
+                    <h3 class="feature-card__title">ML-Driven Analysis</h3>
+                    <p class="feature-card__desc">
+                        Built on a trained model using real student performance data with 
+                        advanced preprocessing and feature engineering.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon feature-card__icon--pink">⚡</div>
+                    <h3 class="feature-card__title">Instant Predictions</h3>
+                    <p class="feature-card__desc">
+                        Get predictions in milliseconds. Simply fill in the student details 
+                        and receive an accurate math score estimate.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon feature-card__icon--cyan">📈</div>
+                    <h3 class="feature-card__title">7 Key Factors</h3>
+                    <p class="feature-card__desc">
+                        Analyzes gender, ethnicity, parental education, lunch type, test prep, 
+                        and reading & writing scores.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Built with Flask & Scikit-Learn · Student Performance Predictor
+        </footer>
+
+    </div>
+
+</body>
+</html>
